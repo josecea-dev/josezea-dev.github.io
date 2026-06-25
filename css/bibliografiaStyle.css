@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container-header {
+    width: 95%;
+    height: 500px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.516) 0%, rgba(206, 202, 202, 0.489) 100%), url(../resources/monoplaza_whiteandblack.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu-nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 450px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    color: rgb(237, 235, 235);
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 30px;
+    width: 80px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+
+.enlaces {
+    width: 710px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.enlaces a {
+    font-family: 'Titillium Web', sans-serif;
+    color: whitesmoke;
+    margin: 0 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.enlaces a:hover {
+    color: rgb(129, 127, 127);
+}
+
+.container-info {
+    width: 500px;
+    height: 100px;
+    margin: 100px auto;
+}
+
+.container-info h2 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.container-info p {
+    color: rgb(200, 200, 200);
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+} 
+
+/* ==========================================
+   NUEVA SECCIÓN DE BIOGRAFÍA EN ZIG-ZAG
+   ========================================== */
+
+.container-main-bio {
+    width: 97%;
+    height: auto;
+    margin: 60px auto;
+}
+
+.section-bio-bloques {
+    width: 85%;
+    max-width: 1200px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px; 
+}
+
+.bloque-bio {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.bloque-bio.reverse {
+    flex-direction: row-reverse;
+}
+
+.bio-media {
+    flex: 1;
+}
+
+.bio-media img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.bio-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.bio-tag {
+    font-size: 13px;
+    font-weight: bold;
+    color: #c6bdb3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.bio-info h2 {
+    color: whitesmoke;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.carrera-text {
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 16px !important;
+    margin-bottom: 15px;
+}
+
+.bio-info p {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.container-footer {
+    width: 100%;
+    background: linear-gradient(180deg, transparent 0%, #0d0d0d 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 60px 0 30px 0;
+    margin-top: 120px;
+}
+
+.footer-content {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-brand img {
+    height: 22px;
+    width: auto;
+    opacity: 0.8;
+}
+
+.footer-brand span {
+    color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.footer-text {
+    color: #555;
+    font-size: 12px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.footer-rights {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.footer-rights p {
+    color: #444;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
